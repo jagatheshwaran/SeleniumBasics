@@ -24,14 +24,14 @@ public class Handling_Link {
 		// get() - It will take you to google home page
 		driver.get("https://www.google.co.in");
 
-		// linkText(String) - It will click the Gmail link on the web page using
+		// linkText(String) - It will click the Gmail link on the web page by
 		// linkText
 		driver.findElement(By.linkText("Gmail")).click();
 
 		// navigate().back() - It will navigate to previous web page
 		driver.navigate().back();
 
-		// partialLinkText(String) - It will click the Gmail link on the web page using
+		// partialLinkText(String) - It will click the Gmail link on the web page by
 		// partial link text
 		driver.findElement(By.partialLinkText("Gma")).click();
 

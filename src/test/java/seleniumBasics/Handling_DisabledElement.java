@@ -36,11 +36,12 @@ public class Handling_DisabledElement {
 		// It will explicitly wait for specified mill seconds
 		Thread.sleep(5000);
 
-		// getAttribute("value") - It will fetch the text value of VALUE attribute , irrespective of element is disabled or enabled
+		// getAttribute("value") - It will fetch the value of VALUE attribute ,
+		// irrespective of element is disabled or enabled
 		String textval = textField.getAttribute("value");
 		System.out.println("Value From Disabled Element : " + textval);
 
-		// arguments[0].removeAttribute('disabled'); - JavaScript Function, It will
+		// arguments[0].removeAttribute('disabled'); - Its JavaScript Function, It will
 		// enable the disabled element in current session
 		JavascriptExecutor javascript = (JavascriptExecutor) driver;
 		javascript.executeScript("arguments[0].removeAttribute('disabled');", textField);
@@ -48,7 +49,7 @@ public class Handling_DisabledElement {
 		// It will explicitly wait for specified mill seconds
 		Thread.sleep(2000);
 
-		// Retrieving text value from Enabled element
+		// getAttribute("value") - It will fetch the value of VALUE attribute
 		String text = textField.getAttribute("value");
 		System.out.println("Value From Enabled Element : " + text);
 

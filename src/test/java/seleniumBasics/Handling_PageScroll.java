@@ -28,14 +28,14 @@ public class Handling_PageScroll {
 
 		// JavascriptExecutor is used to perform the page scroll related operations
 
-		// window.scrollTo(0,document.body.scrollHeight) - It will scroll down to the
-		// page
+		// window.scrollTo(0,document.body.scrollHeight) - It will scroll down to
+		// bottom of the page
 		((JavascriptExecutor) driver).executeScript("window.scrollTo(0,document.body.scrollHeight)");
 
 		// It will explicitly wait for specified mill seconds
 		Thread.sleep(2000);
 
-		// window.scrollTo(0,-document.body.scrollHeight) - It will scroll to page top
+		// window.scrollTo(0,-document.body.scrollHeight) - It will scroll up to top of the page
 		((JavascriptExecutor) driver).executeScript("window.scrollTo(0,-document.body.scrollHeight)");
 
 		// It will explicitly wait for specified mill seconds

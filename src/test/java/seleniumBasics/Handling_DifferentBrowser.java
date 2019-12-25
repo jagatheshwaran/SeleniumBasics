@@ -49,7 +49,7 @@ public class Handling_DifferentBrowser {
 				driver.manage().window().maximize();
 			}
 
-			// Based on Browser selection, get() - It will take us to the Google home page
+			// Based on selected Browser, get() - It will take you to the Google home page
 			driver.get("https://www.google.co.in");
 
 			// The current web page title is captured

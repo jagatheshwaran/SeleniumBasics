@@ -20,7 +20,7 @@ public class Handling_ToolTip {
 	public static void main(String ar[]) throws InterruptedException {
 
 		toolTipWithoutActions();
-		// toolTipWithActions();
+		toolTipWithActions();
 	}
 
 	// The below method will handle ToolTip functionality without using Actions

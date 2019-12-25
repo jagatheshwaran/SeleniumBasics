@@ -10,7 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class Handling_RadioButtonDropDown {
+public class Handling_RadioButtonAndDropDown {
 
 	public static void main(String[] args) throws InterruptedException {
 
@@ -28,15 +28,15 @@ public class Handling_RadioButtonDropDown {
 
 		// The below code will click Male radio button on the registration web page
 		WebElement maleRadioButton = driver.findElement(By.xpath("(//input[@name='gender'])[1]"));
-		System.out.println("Male RadioButton : " + maleRadioButton.isEnabled());
+		System.out.println("Male RadioButton Enabled : " + maleRadioButton.isEnabled());
 		maleRadioButton.click();
-		System.out.println("Male RadioButton : " + maleRadioButton.isSelected());
+		System.out.println("Male RadioButton Selected : " + maleRadioButton.isSelected());
 
 		// The Select class will be used to handle the drop down
 
 		// The drop down values will be selected by index, visibleText, and value
 
-		// The below code will create instance for Select class with web element
+		// The below code will create instance for Select class by passing web element
 		Select dropdown = new Select(driver.findElement(By.name("country")));
 
 		// selectByIndex(int) - It will select the option from drop down by Index

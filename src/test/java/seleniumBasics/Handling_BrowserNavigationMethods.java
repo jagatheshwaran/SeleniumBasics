@@ -44,7 +44,7 @@ public class Handling_BrowserNavigationMethods {
 		String url3 = driver.getCurrentUrl();
 		System.out.println(url3);
 
-		// navigate().refresh() - It will refresh the web page
+		// navigate().refresh() - It will refresh the current web page
 		driver.navigate().refresh();
 		String url4 = driver.getCurrentUrl();
 		System.out.println(url4);

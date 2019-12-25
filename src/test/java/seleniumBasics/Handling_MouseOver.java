@@ -28,16 +28,16 @@ public class Handling_MouseOver {
 
 		// The Actions class is used to handle the mouse hand over operations
 
-		// Instance of Actions class is created with driver instance
+		// Instance of Actions class is created by passing driver instance
 		Actions builder = new Actions(driver);
 
 		// Actions class is used to handle the mouse hover operation
 		WebElement menu = driver.findElement(By.xpath("//span[@class='header-helpful-links-title']"));
 
-		// The below code will movwe to the above web element and hover on it
+		// The below code will move to the above web element and hover on it
 		builder.moveToElement(menu).build().perform();
 
-		// The below code will click link from mouse hover options
+		// The below code will click link from options displayed after mouse hover of web element
 		driver.findElement(By.xpath("//a[@class='header-link'][text()='Why CarMax?']")).click();
 
 		// close() - It will close the Browser window

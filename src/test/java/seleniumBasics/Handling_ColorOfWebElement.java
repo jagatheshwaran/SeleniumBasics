@@ -26,11 +26,11 @@ public class Handling_ColorOfWebElement {
 		// get() - It will take you to github web site
 		driver.get("https://github.com/jagatheshwaran");
 
-		// The below codes will check the SignUp button color displayed on the web page
+		// The below set of codes will check the SignUp button color displayed on the web page
 
 		String expectedSignUpButtonBGColor = "rgba(40, 167, 69, 1)";
 
-		// getCssValue() - It will fetch the CSS value of the element on the web page
+		// getCssValue() - It will fetch the color CSS value of the element on the web page
 		String actualSignUpButtonBGColor = driver.findElement(By.xpath("//*[contains(@class,'btn-primary')]"))
 				.getCssValue("background-color");
 

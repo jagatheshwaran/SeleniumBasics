@@ -27,7 +27,7 @@ public class Handling_Frame {
 		// switchTo().frame(String) - It will switch to frame by name
 		driver.switchTo().frame("classFrame");
 
-		// The below code will click link on frame - classFrame
+		// The below code will click a link on frame
 		driver.findElement(By.xpath("//td[@class='colFirst']//a[text()='com.thoughtworks.selenium']")).click();
 
 		// switchTo().defaultContent() - It will switch back to default window from
@@ -37,10 +37,10 @@ public class Handling_Frame {
 		// It will wait explicitly for specified mill seconds
 		Thread.sleep(5000);
 
-		// switchTo().frame(String) - It will switch to frame by name
+		// switchTo().frame(int) - It will switch to frame by index
 		driver.switchTo().frame(1);
 
-		// The below code will click link on frame 1
+		// The below code will click link on frame
 		driver.findElement(By.xpath("//a[text()='AbstractAnnotations']")).click();
 
 		// switchTo().defaultContent() - It will switch back to default window from
@@ -52,6 +52,8 @@ public class Handling_Frame {
 
 		// The below code will switch to frame by xpath
 		driver.switchTo().frame(driver.findElement(By.xpath("//frame[@title='All Packages']")));
+
+		// The below code will click link on frame
 		driver.findElement(By.linkText("org.openqa.selenium")).click();
 
 		// It will wait explicitly for specified mill seconds
