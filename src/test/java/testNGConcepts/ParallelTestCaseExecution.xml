@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Ecommerce" parallel="classes" thread-count="2">
+	<test name="SanityTest">
+		<classes>
+			<class name="testNG_Concepts.Test_With_Thread" />
+			<class name="testNG_Concepts.Test_With_Threads" />
+		</classes>
+	</test>
+</suite>
+
+
+<!-- <suite name="Ecommerce1" parallel="methods" thread-count="3">
+	<test name="SanityTest">
+		<classes>
+			<class name="testNG_Concepts.Test_With_Thread" />
+		</classes>
+	</test>
+</suite> -->

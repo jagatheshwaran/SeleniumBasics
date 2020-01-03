@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="RetryFailedTests" verbose="1" >
+ <listeners>
+        <listener class-name="testNGFailedTestRerun.FailRerunListener"/>
+  </listeners>
+  <test name="RetryMulitple">
+    <classes>
+      <class name="testNGFailedTestRerun.FailRerunExample"/>
+    </classes>
+  </test>
+</suite>

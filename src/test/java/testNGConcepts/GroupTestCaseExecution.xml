@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<suite name="Ecommerce">
+	<test name="SanityTest">
+		<groups>
+			<define name="all" />
+			<include name="sanity" />
+			<include name="regression" />
+			<run>
+				<exclude name="sanity" />
+				<include name="regression" />
+			</run>
+		</groups>
+		<classes>
+			<class name="testNG_Concepts.BeforeGroups_Test_AfterGroups" />
+		</classes>
+	</test>
+</suite>
+
+ 

@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Ecommerce" parallel="false">
+	<test name="SanityTest">
+		<classes>
+			<class name="testNG_Concepts.BeforeClass_Test_AfterClass" />
+			<class name="testNG_Concepts.BeforeTest_Test_AfterTest" />
+		</classes>
+	</test>
+</suite>
