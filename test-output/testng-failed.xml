@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [pdfEmailTest]">
+  <listeners>
+    <listener class-name="pdfEmailReport.PdfReportListener"/>
+  </listeners>
+  <test name="SendPDFEmail(failed)">
+    <classes>
+      <class name="pdfEmailReport.ApplicationLogin">
+        <methods>
+          <include name="loginToApplication"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- pdfEmailReport.ApplicationLogin -->
+    </classes>
+  </test> <!-- SendPDFEmail(failed) -->
+</suite> <!-- Failed suite [pdfEmailTest] -->

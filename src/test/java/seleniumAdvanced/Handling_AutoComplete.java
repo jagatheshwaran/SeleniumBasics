@@ -33,7 +33,7 @@ public class Handling_AutoComplete {
 		// Driver instance is created
 		driver = new ChromeDriver();
 
-		// manage().window().maximize() - Maximize Browser Window
+		// manage().window().maximize() - To Maximize Browser Window
 		driver.manage().window().maximize();
 
 		// WebDriverWait instance is created
