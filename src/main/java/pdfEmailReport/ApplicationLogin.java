@@ -104,7 +104,7 @@ public class ApplicationLogin extends takeSnapShot {
 		// The below line will close the browser window
 		driver.close();
 
-		PdfGeneration.sendPDFReportByMail("testjaga001@gmail.com", "Jaga@2983", "testjaga003@gmail.com",
+		PdfGeneration.sendPDFReportByMail("FromEmail", "Password", "ToEmail",
 				"Test Execution Report", "Please find the test execution report");
 	}
 
