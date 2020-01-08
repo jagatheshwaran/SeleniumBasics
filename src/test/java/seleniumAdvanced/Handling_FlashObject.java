@@ -28,6 +28,8 @@ public class Handling_FlashObject {
 		Thread.sleep(5000);
 		flash.callFlashObject("SetVariable", "/:message", "Flash testing using selenium Webdriver");
 		System.out.println(flash.callFlashObject("GetVariable", "/:message"));
+		System.out.println(flash.callFlashObject("GetVariable", "/:message"));
+		
 	}
 
 }
